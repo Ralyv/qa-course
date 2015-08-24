@@ -1,0 +1,173 @@
+1.
+Name: Test login form - All fields with valid BP classes - values middle
+
+Test steps:
+1. Open qa.soft-intellect window : http://qa.soft-intellect.com/
+2. Navigate to Register form and open it
+3. Input in "First name" 5 latin letters 
+4. Input in "Last name" 7 latin letters
+5. Input in "Age" value 125
+6. Input in "Password" 15 symbols
+7. Input in "Confirm password" 15 symbols
+8. Press "Submit" button
+
+Expected Result: The system allows access 
+
+------------------------------------------
+2.
+Name: Test login form - BVP - values under maximum
+
+Test steps:
+1. Open qa.soft-intellect window : http://qa.soft-intellect.com/
+2. Navigate to Register form and open it
+3. Input in "First name" 9 latin letters 
+4. Input in "Last name" 9 latin letters
+5. Input in "Age" vulue 998
+6. Input in "Password" 19 symbols
+7. Input in "Confirm password" 19 symbols
+8. Press "Submit" button
+
+Expected Result: The system allows access 
+----------------------------------------------
+
+3.
+Name: Test login form - BVP - values more than minimum
+
+Test steps:
+1. Open qa.soft-intellect window : http://qa.soft-intellect.com/
+2. Navigate to Register form and open it
+3. Input in "First name" 4 latin letters 
+4. Input in "Last name" 4 latin letters
+5. Input in "Age" vulue 19
+6. Input in "Password" 6 symbols
+7. Input in "Confirm password" 6 symbols
+8. Press "Submit" button
+
+Expected Result: The system allows access 
+----------------------------------------------
+4.
+Name: Test login form - All fields are left blank spaces (invallid classes)
+
+Test steps:
+1. Open qa.soft-intellect window : http://qa.soft-intellect.com/
+2. Navigate to Register form and open it
+3. Leave "First name" as blank space
+4. Leave  "Last name" as blank space
+5. Leave  "Age" as blank space
+6. Leave  "Password" as blank space
+7. Leave  "Confirm password" as blank space
+8. Press "Submit" button
+
+Expected Result: The system deny access - all values are incorrect
+
+-------------------------------------------
+5.
+Name: Test login form - BVP - values under minimum
+
+Test steps:
+1. Open qa.soft-intellect window : http://qa.soft-intellect.com/
+2. Navigate to Register form and open it
+3. Input in "First name" 2 latin letters 
+4. Input in "Last name" 2 latin letters
+5. Input in "Age" vulues 17
+6. Input in "Password" 4 symbols
+7. Input in "Confirm password" 4 symbols
+8. Press "Submit" button
+
+Expected Result: The system deny access - all values are incorrect
+
+---------------------------------------------
+6.
+Name: Test login form - BVP - values over maximum
+
+Test steps:
+1. Open qa.soft-intellect window : http://qa.soft-intellect.com/
+2. Navigate to Register form and open it
+3. Input in "First name" 11 latin letters 
+4. Input in "Last name" 11 latin letters
+5. Input in "Age" vulue 1000
+6. Input in "Password" 21 symbols
+7. Input in "Confirm password" 21 symbols
+8. Press "Submit" button
+
+Expected Result: The system deny access - all values are incorrect 
+-----------------------------------------------
+7.
+Name: Test login form - BVP - "Age" feature - value 017
+
+Test steps:
+1. Open qa.soft-intellect window : http://qa.soft-intellect.com/
+2. Navigate to Register form and open it
+3. Input in "First name" 5 latin letters 
+4. Input in "Last name" 5 latin letters
+5. Input in "Age" vulue 017
+6. Input in "Password" 20 symbols
+7. Input in "Confirm password" 20 symbols
+8. Press "Submit" button
+
+Expected Result: The system deny access - "Age" value is incorrect
+-----------------------------------------------
+8.
+Name: Test login form - BVP - "Age" feature - value -99
+
+Test steps:
+1. Open qa.soft-intellect window : http://qa.soft-intellect.com/
+2. Navigate to Register form and open it
+3. Input in "First name" 5 latin letters 
+4. Input in "Last name" 5 latin letters
+5. Input in "Age" vulue -99
+6. Input in "Password" 20 symbols
+7. Input in "Confirm password" 20 symbols
+8. Press "Submit" button
+
+Expected Result: The system deny access - "Age" feature with latin letters
+-----------------------------------------------
+9.
+Name: Test login form - BVP - "Age" feature - value 17,
+
+Test steps:
+1. Open qa.soft-intellect window : http://qa.soft-intellect.com/
+2. Navigate to Register form and open it
+3. Input in "First name" 5 latin letters 
+4. Input in "Last name" 5 latin letters
+5. Input in "Age" valie 17,
+6. Input in "Password" 20 symbols
+7. Input in "Confirm password" 20 symbols
+8. Press "Submit" button
+
+Expected Result: The system deny access - "Age" value is incorrect
+-----------------------------------------------
+
+10.
+Name: Test login form - BVP - "First name" feature - numbers
+
+Test steps:
+1. Open qa.soft-intellect window : http://qa.soft-intellect.com/
+2. Navigate to Register form and open it
+3. Input in "First name" 5 numbers 
+4. Input in "Last name" 5 numbers
+5. Input in "Age" valie 19,
+6. Input in "Password" 20 symbols
+7. Input in "Confirm password" 20 symbols
+8. Press "Submit" button
+
+Expected Result: The system deny access - "First name" is incorrect filled
+
+----------------------------------------------
+11.
+Name: Test login form - BVP - "First name" feature - forbidden characters
+
+Test steps:
+1. Open qa.soft-intellect window : http://qa.soft-intellect.com/
+2. Navigate to Register form and open it
+3. Input in "First name" 5 forbidden characters
+4. Input in "Last name" 5 forbidden characters
+5. Input in "Age" valie 19,
+6. Input in "Password" 20 symbols
+7. Input in "Confirm password" 20 symbols
+8. Press "Submit" button
+
+Expected Result: The system deny access - "First name" is incorrect filled
+
+
+
