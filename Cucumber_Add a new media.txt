@@ -1,0 +1,9 @@
+Feature: Add a new media
+The administrator should add a new image. 
+The added media must appears at <Media Library>
+	Scenario: Successfully added a new image
+		Given I have chosen new image to add 
+	    When  I press <Add new> button 
+		And   I press <Select files> button 
+		And   I choose an image
+		Then  The added image should appear at <Media Library> 
